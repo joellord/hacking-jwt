@@ -1,0 +1,17 @@
+{
+  "name": "hacking-jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "nodemon ./api",
+    "auth": "nodemon ./auth",
+    "moresecure": "nodemon ./auth/moresecure.js",
+    "pres": "cd presentation && npm start",
+    "start": "concurrently --kill-others \"npm run api\" \"npm run auth\" \"npm run moresecure\" \"npm run pres\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

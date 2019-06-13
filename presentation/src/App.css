@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button {
+  border: 1px solid darkcyan;
+  background: lightcyan;
+  box-shadow: none;
+  border-radius: 5px;
+  height: 75px;
+  min-width: 250px;
+  font-size: 1em;
+  margin: 0.25rem;
+}
+
+.jwt {
+  overflow-wrap: break-word;
+  word-break: break-all;
+  text-align: left;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.align-left {
+  text-align: left;
+  margin-left:0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.diorama-footer-left {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  padding: 0 0 0 3rem;
+  background: transparent url("img/twitter.png") 0 0.5rem no-repeat;
+  background-size: 2rem;
+  box-shadow: none;
+  color: #1b2b34;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.diorama-footer-right {
+  position: fixed;
+  bottom: 2rem;
+  right: 0rem;
+  padding: 1rem 0rem 0rem 12rem;
+  background: transparent url("img/auth0-logo-forlightbg.png") 0 0 no-repeat;
+  background-size: 10rem;
+  box-shadow: none;
+}
+
+btnGroup {
+  flex-direction: row;
+}
