@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Slide, Image, Subtitle, Columns, List } from '@sambego/diorama';
-import ImgJwt from "../img/Access-Token.svg";
+// import ImgJwt from "../img/Access-Token.svg";
+import ImgJwtLogo from "../img/jwt.svg";
 
 export default class TalkTitle extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class TalkTitle extends Component {
       <Slide>
         <Columns>
           <div>
-            <Image src={ImgJwt} color="" />
+            <Image style={{width: '500px'}} src={ImgJwtLogo} color="" />
           </div>
           <div>
             <Subtitle className="align-left">JSON Web Token</Subtitle>

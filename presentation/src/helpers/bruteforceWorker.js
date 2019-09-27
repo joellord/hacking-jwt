@@ -40,16 +40,9 @@ function findKey(jwt) {
       convertedKey = convertToBaseX(key);
 
       sig = CryptoJS.HmacSHA256(data, convertedKey).toString(CryptoJS.enc.Base64);
-      sig = sig.replace(/=/ig, "");
+      sig = sig.replace(/\=/ig, "");
       sig = sig.replace(/\+/ig, "-");
       sig = sig.replace(/\//ig, "_");
-
-      if(key > 481261) {
-        console.log(key);
-        console.log(sig);
-        resolve("abcd");
-        break;
-      }
 
       if (convertedKey.length >= 5) {
         console.log("Key is longer than 5 characters, this is going to take forever.");

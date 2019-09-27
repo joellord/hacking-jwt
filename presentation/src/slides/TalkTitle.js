@@ -9,7 +9,7 @@ export default class TalkTitle extends Component {
       <Slide>
         <Image src={Hacker} full color="#6666ff" />
         <Title style={{position: 'absolute', left: '50%', top: '50%', transform: 'translate3d(-50%, -50%, 0)', color: '#fff', margin: 0}}>
-          Hacking JWTs
+          Hacking JWTs<br/>
         </Title>
       </Slide>
     )

@@ -54,7 +54,7 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const footer = <Footer left="@joel__lord&nbsp;&nbsp;&nbsp;#osn2019" right="&nbsp;" />
+    const footer = <Footer left="@joel__lord&nbsp;&nbsp;&nbsp;#VTCC11" right="&nbsp;" />
 
     const titleStyleForImageSlide = {
       position: "absolute",

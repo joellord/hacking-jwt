@@ -29,6 +29,7 @@ export default class BruteForce extends Component {
         self.setState({currentStatus: `Found key: '${key}' in ${delay} seconds`});
       });
     }, 0);
+    // let worker = new Worker("../helpers/bruteforceWorker.js");
   }
 
   render() {
