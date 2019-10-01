@@ -54,7 +54,7 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const footer = <Footer left="@joel__lord&nbsp;&nbsp;&nbsp;#VTCC11" right="&nbsp;" />
+    const footer = <Footer left="@joel__lord&nbsp;&nbsp;&nbsp;" right="&nbsp;" />
 
     const titleStyleForImageSlide = {
       position: "absolute",
@@ -75,10 +75,7 @@ class App extends Component {
           <Image src={ImgWoohoo} full />
           <Title style={titleStyleForWoohoo}>Twitter Notifications</Title>
         </Slide>
-        <Slide>
-          <Image src={ImgStickers} full />
-          <Title style={titleStyleForImageSlide}>I Have Stickers</Title>
-        </Slide>
+        
         <OAuth />
 
         <SectionSlide text="Authorization Code Grant" background="#77adff" color="#fff" />
