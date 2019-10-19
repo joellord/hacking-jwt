@@ -57,9 +57,9 @@ export default class ContactAPI extends Component {
         jwtParts[2] = " "
       } else {
         let sig = CryptoJS.HmacSHA256(`${jwtParts[0]}.${jwtParts[1]}`, this.state.signature).toString(CryptoJS.enc.Base64);
-        sig = sig.replace("=", "");
-        sig = sig.replace("+", "-");
-        sig = sig.replace("/", "_");
+        sig = sig.replace(/=/g, "");
+        sig = sig.replace(/\+/g, "-");
+        sig = sig.replace(/\//g, "_");
         jwtParts[2] = sig;
       }
     }
